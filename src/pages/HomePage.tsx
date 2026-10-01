@@ -132,23 +132,23 @@ export const HomePage: React.FC<HomePageProps> = ({
 
                 {/* CTA Buttons */}
                 <div className="flex flex-wrap items-center gap-3 pt-2">
-                  <button 
+                  <button
                     onClick={() => onOpenBooking()}
                     className="inline-flex items-center justify-center px-6 h-12 rounded-xl bg-[#780b00] text-white font-semibold text-sm shadow-sm hover:opacity-95 active:scale-[0.98] transition-all cursor-pointer"
                   >
                     Book an Appointment
                   </button>
 
-                  <a 
+                  <a
                     href="tel:6360654061"
                     className="inline-flex items-center justify-center px-5 h-12 rounded-xl bg-[#002548] text-white font-semibold text-sm shadow-sm hover:bg-[#123b66] transition-all"
                   >
                     Call Now
                   </a>
 
-                  <a 
-                    href="https://wa.me/916360654061" 
-                    target="_blank" 
+                  <a
+                    href="https://wa.me/916360654061"
+                    target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-2 px-4 h-12 rounded-xl bg-[#dde9fb] text-[#002548] font-semibold text-sm hover:bg-[#d7e4f5] transition-colors"
                   >
@@ -177,13 +177,13 @@ export const HomePage: React.FC<HomePageProps> = ({
               {/* Hero Right Operatory Showcase */}
               <div className="lg:col-span-6 relative">
                 <div className="relative w-full aspect-[4/3] rounded-2xl overflow-hidden shadow-xl bg-[#e4efff]">
-                  <img 
-                    className="w-full h-full object-cover" 
+                  <img
+                    className="w-full h-full object-cover"
                     alt="Doctor providing dental treatment at Narayana Dental Clinic in Austin Town Bengaluru"
-                    src="/images/clinic/01_clinic_patient_care_enhanced.webp" 
+                    src="/images/clinic/01_clinic_patient_care_enhanced.webp"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-[#002548]/60 via-transparent to-transparent"></div>
-                  
+
                   {/* Floating Clinic Badge */}
                   <div className="absolute bottom-4 left-4 right-4 sm:right-auto bg-white/95 backdrop-blur-md px-4 py-3 rounded-xl shadow-md flex items-center gap-3">
                     <div className="w-10 h-10 rounded-lg bg-[#e4efff] flex items-center justify-center text-[#002548]">
@@ -243,8 +243,8 @@ export const HomePage: React.FC<HomePageProps> = ({
             {/* 14 Service Cards Bento Grid */}
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
               {serviceCards.map((service, index) => (
-                <div 
-                  key={index} 
+                <div
+                  key={index}
                   className="bg-white p-5 rounded-2xl shadow-xs hover:shadow-md border border-slate-100 transition-all flex flex-col justify-between group"
                 >
                   <div>
@@ -254,7 +254,7 @@ export const HomePage: React.FC<HomePageProps> = ({
                     <h3 className="text-base font-bold text-[#002548] mt-4">{service.title}</h3>
                     <p className="text-xs sm:text-sm text-[#43474f] mt-1.5 leading-relaxed">{service.description}</p>
                   </div>
-                  <button 
+                  <button
                     onClick={() => {
                       onNavigate('services');
                     }}
@@ -302,7 +302,7 @@ export const HomePage: React.FC<HomePageProps> = ({
                   </li>
                 </ul>
                 <div className="pt-2">
-                  <button 
+                  <button
                     onClick={() => onNavigate('services')}
                     className="inline-flex items-center justify-center px-5 h-12 rounded-xl bg-[#002548] text-white font-semibold text-sm hover:bg-[#123b66] transition-all cursor-pointer"
                   >
@@ -312,10 +312,10 @@ export const HomePage: React.FC<HomePageProps> = ({
               </div>
               <div className="lg:col-span-6">
                 <div className="w-full aspect-[4/3] rounded-2xl overflow-hidden shadow-md bg-[#e4efff]">
-                  <img 
-                    className="w-full h-full object-cover object-center" 
-                    alt="Dental treatment procedure and surgical implant care at Narayana Dental Clinic" 
-                    src="/images/clinic/03_dental_treatment_enhanced.webp" 
+                  <img
+                    className="w-full h-full object-cover object-center"
+                    alt="Dental treatment procedure and surgical implant care at Narayana Dental Clinic"
+                    src="/images/clinic/03_dental_treatment_enhanced.webp"
                     loading="lazy"
                   />
                 </div>
@@ -348,7 +348,7 @@ export const HomePage: React.FC<HomePageProps> = ({
                   </li>
                 </ul>
                 <div className="pt-2">
-                  <button 
+                  <button
                     onClick={() => onNavigate('services')}
                     className="inline-flex items-center justify-center px-5 h-12 rounded-xl bg-[#002548] text-white font-semibold text-sm hover:bg-[#123b66] transition-all cursor-pointer"
                   >
@@ -358,10 +358,10 @@ export const HomePage: React.FC<HomePageProps> = ({
               </div>
               <div className="lg:col-span-6 lg:order-1">
                 <div className="w-full aspect-[4/3] rounded-2xl overflow-hidden shadow-md bg-[#e4efff]">
-                  <img 
-                    className="w-full h-full object-cover object-center" 
-                    alt="Doctor providing personalized dental care and consultation at Narayana Dental Clinic" 
-                    src="/images/clinic/06_dental_treatment_enhanced.webp" 
+                  <img
+                    className="w-full h-full object-cover object-center"
+                    alt="Doctor providing personalized dental care and consultation at Narayana Dental Clinic"
+                    src="/images/clinic/06_dental_treatment_enhanced.webp"
                     loading="lazy"
                   />
                 </div>
@@ -394,7 +394,7 @@ export const HomePage: React.FC<HomePageProps> = ({
                   </li>
                 </ul>
                 <div className="pt-2">
-                  <button 
+                  <button
                     onClick={() => onNavigate('services')}
                     className="inline-flex items-center justify-center px-5 h-12 rounded-xl bg-[#002548] text-white font-semibold text-sm hover:bg-[#123b66] transition-all cursor-pointer"
                   >
@@ -404,10 +404,10 @@ export const HomePage: React.FC<HomePageProps> = ({
               </div>
               <div className="lg:col-span-6">
                 <div className="w-full aspect-[4/3] rounded-2xl overflow-hidden shadow-md bg-[#e4efff]">
-                  <img 
-                    className="w-full h-full object-contain" 
-                    alt="Real orthodontic braces before and after alignment result at Narayana Dental Clinic" 
-                    src="/images/cases/case-02-orthodontic-alignment.jpg" 
+                  <img
+                    className="w-full h-full object-contain"
+                    alt="Real orthodontic braces before and after alignment result at Narayana Dental Clinic"
+                    src="/images/cases/case-02-orthodontic-alignment.jpg"
                     loading="lazy"
                   />
                 </div>
@@ -423,7 +423,7 @@ export const HomePage: React.FC<HomePageProps> = ({
                 <h2 className="text-2xl sm:text-3xl font-bold text-[#002548] font-display">Meet Our Dental Specialists</h2>
                 <p className="text-sm sm:text-base text-[#43474f]">Experienced professionals delivering personalized, evidence-based dental care with a gentle touch.</p>
               </div>
-              <button 
+              <button
                 onClick={() => onNavigate('doctors')}
                 className="self-start md:self-auto inline-flex items-center gap-2 px-5 h-12 rounded-xl bg-[#dde9fb] text-[#002548] font-semibold text-sm hover:bg-[#d7e4f5] transition-colors cursor-pointer"
               >
@@ -436,10 +436,10 @@ export const HomePage: React.FC<HomePageProps> = ({
               {/* Doctor 1: Dr. Prakash Venkatarama */}
               <div className="bg-white p-5 sm:p-6 rounded-2xl shadow-xs border border-slate-100 flex flex-col sm:flex-row gap-5 items-center sm:items-start group hover:shadow-md transition-shadow">
                 <div className="w-36 sm:w-44 shrink-0 aspect-[3/4] rounded-xl overflow-hidden shadow-sm bg-[#e4efff]">
-                  <img 
-                    alt="Dr. Prakash Venkatarama" 
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" 
-                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuBO4t14a3OuFV_N67T5lbA6pi18UlgJvI1dtYntd7xWBzAQOsl7XQIPVvz8d_5R_4g6Sukj_zJhtQXZui-DIqoHBTyyvRqS_Zq8kLcoqdlfBN2d3osmdIypcoi_WRrHLWAEafNReTOGlSTpKu-r5LHwElsd-gTio1T2XZfdJC1Inz_lHXFyLsayj3uAW7FAKvcEdg5nKruZq_BkSooqrC255IyL6gHF4YD9Di2V7dzGELv_nF3OT48XrDqYorqxAnKH3A" 
+                  <img
+                    alt="Dr. Prakash Venkatarama"
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuBO4t14a3OuFV_N67T5lbA6pi18UlgJvI1dtYntd7xWBzAQOsl7XQIPVvz8d_5R_4g6Sukj_zJhtQXZui-DIqoHBTyyvRqS_Zq8kLcoqdlfBN2d3osmdIypcoi_WRrHLWAEafNReTOGlSTpKu-r5LHwElsd-gTio1T2XZfdJC1Inz_lHXFyLsayj3uAW7FAKvcEdg5nKruZq_BkSooqrC255IyL6gHF4YD9Di2V7dzGELv_nF3OT48XrDqYorqxAnKH3A"
                   />
                 </div>
                 <div className="flex flex-col gap-1 text-center sm:text-left flex-1 h-full">
@@ -452,7 +452,7 @@ export const HomePage: React.FC<HomePageProps> = ({
                     Root Canal Specialist &amp; Implantologist. Renowned for meticulous restorative work, painless root canal treatments, and extensive expertise in single and full-arch implant rehabilitations.
                   </p>
                   <div className="pt-3 mt-auto">
-                    <button 
+                    <button
                       onClick={() => onNavigate('doctors')}
                       className="text-xs font-semibold text-[#002548] inline-flex items-center gap-1 group-hover:text-[#24638f] transition-colors cursor-pointer"
                     >
@@ -466,10 +466,10 @@ export const HomePage: React.FC<HomePageProps> = ({
               {/* Doctor 2: Dr. Madhura Prakash */}
               <div className="bg-white p-5 sm:p-6 rounded-2xl shadow-xs border border-slate-100 flex flex-col sm:flex-row gap-5 items-center sm:items-start group hover:shadow-md transition-shadow">
                 <div className="w-36 sm:w-44 shrink-0 aspect-[3/4] rounded-xl overflow-hidden shadow-sm bg-[#e4efff]">
-                  <img 
-                    alt="Dr. Madhura Prakash" 
-                    className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-300" 
-                    src="/images/dr-madhura-prakash.jpg" 
+                  <img
+                    alt="Dr. Madhura Prakash"
+                    className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-300"
+                    src="/images/dr-madhura-prakash.jpg"
                   />
                 </div>
                 <div className="flex flex-col gap-1 text-center sm:text-left flex-1 h-full">
@@ -482,7 +482,7 @@ export const HomePage: React.FC<HomePageProps> = ({
                     Orthodontist &amp; Cosmetic Dental Surgeon. Specializing in advanced clear aligners, orthodontic bite corrections, pediatric preventative care, and aesthetic smile transformations.
                   </p>
                   <div className="pt-3 mt-auto">
-                    <button 
+                    <button
                       onClick={() => onNavigate('doctors')}
                       className="text-xs font-semibold text-[#002548] inline-flex items-center gap-1 group-hover:text-[#24638f] transition-colors cursor-pointer"
                     >
@@ -502,10 +502,10 @@ export const HomePage: React.FC<HomePageProps> = ({
                 {/* Authentic Clinic Showcase */}
                 <div className="lg:col-span-5 relative">
                   <div className="w-full aspect-[4/5] rounded-2xl overflow-hidden shadow-md bg-[#e4efff]">
-                    <img 
-                      className="w-full h-full object-cover" 
-                      alt="Bright, serene dental operatory with natural wooden cabinetry, large sunny picture window showing Austin Town, ergonomic patient dental chair, and autoclave sterilization equipment in Bengaluru clinic." 
-                      src="https://lh3.googleusercontent.com/aida-public/AB6AXuAfnWPspzWjbXDzycD9JAgoXRn-ImxhlIYvRlJ3Jiia-nszltRh05oPGfqmaqlhxTPQy8jBc25f51B0fyzcMlKOjlIpfaYmf8vgfmzXkVUx7A9Qo49sw72745ambNqLmZ-7Xbogn5eyva0btYrjDR7fh3dlZUv5vOkaW6t--f45dlbbSHznHn8iAshFFecC9TBsjZLcVzq7NDaYYuBQQ-Icodo1MSfS-H_RLlwI1evZAArecXULre8x" 
+                    <img
+                      className="w-full h-full object-cover"
+                      alt="Bright, serene dental operatory with natural wooden cabinetry, large sunny picture window showing Austin Town, ergonomic patient dental chair, and autoclave sterilization equipment in Bengaluru clinic."
+                      src="https://lh3.googleusercontent.com/aida-public/AB6AXuAfnWPspzWjbXDzycD9JAgoXRn-ImxhlIYvRlJ3Jiia-nszltRh05oPGfqmaqlhxTPQy8jBc25f51B0fyzcMlKOjlIpfaYmf8vgfmzXkVUx7A9Qo49sw72745ambNqLmZ-7Xbogn5eyva0btYrjDR7fh3dlZUv5vOkaW6t--f45dlbbSHznHn8iAshFFecC9TBsjZLcVzq7NDaYYuBQQ-Icodo1MSfS-H_RLlwI1evZAArecXULre8x"
                     />
                   </div>
                   <div className="absolute -bottom-4 -right-4 bg-[#002548] text-white p-4 rounded-2xl shadow-lg hidden sm:flex flex-col max-w-[200px]">
@@ -653,11 +653,10 @@ export const HomePage: React.FC<HomePageProps> = ({
                     <button
                       key={filter}
                       onClick={() => setActiveGalleryFilter(filter)}
-                      className={`px-3.5 py-1.5 rounded-full text-xs font-medium transition-colors cursor-pointer ${
-                        isActive
+                      className={`px-3.5 py-1.5 rounded-full text-xs font-medium transition-colors cursor-pointer ${isActive
                           ? 'bg-[#002548] text-white shadow-xs'
                           : 'bg-[#e4efff] text-[#002548] hover:bg-[#dde9fb]'
-                      }`}
+                        }`}
                     >
                       {labels[filter]}
                     </button>
@@ -669,15 +668,15 @@ export const HomePage: React.FC<HomePageProps> = ({
             {/* Showcase Grid */}
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
               {filteredGallery.map((item) => (
-                <div 
+                <div
                   key={item.id}
                   onClick={() => onNavigate('gallery')}
                   className="aspect-[4/3] rounded-2xl overflow-hidden shadow-xs bg-[#e4efff] cursor-pointer group"
                 >
-                  <img 
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" 
+                  <img
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                     alt={item.alt}
-                    src={item.img} 
+                    src={item.img}
                     loading="lazy"
                   />
                 </div>
@@ -794,9 +793,9 @@ export const HomePage: React.FC<HomePageProps> = ({
                   </div>
 
                   <div className="flex flex-wrap items-center gap-3 pt-2">
-                    <a 
+                    <a
                       className="inline-flex items-center gap-2 px-5 h-12 rounded-xl bg-[#002548] text-white font-semibold text-sm hover:bg-[#123b66] transition-all"
-                      href="https://maps.google.com/?q=Narayana+Dental+Clinic+Austin+Town+Bengaluru" 
+                      href="https://maps.google.com/?q=Narayana+Dental+Clinic+Austin+Town+Bengaluru"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -804,7 +803,7 @@ export const HomePage: React.FC<HomePageProps> = ({
                       <span>Get Directions</span>
                     </a>
 
-                    <a 
+                    <a
                       className="inline-flex items-center gap-2 px-5 h-12 rounded-xl bg-[#dde9fb] text-[#002548] font-semibold text-sm hover:bg-[#d7e4f5] transition-colors"
                       href="tel:6360654061"
                     >
@@ -816,7 +815,7 @@ export const HomePage: React.FC<HomePageProps> = ({
 
                 {/* Map Container */}
                 <div className="lg:col-span-6">
-                  <div 
+                  <div
                     className="w-full h-80 lg:h-96 rounded-2xl bg-[#e4efff] shadow-md bg-cover bg-center overflow-hidden flex flex-col justify-end p-4 relative"
                     style={{ backgroundImage: 'url("https://lh3.googleusercontent.com/aida-public/AB6AXuDWFRlARMkmO1SbhoDzyfLQjZXJno5sMwbcfdTXpGuTMvefpsq0IO4D_p1yDPK-1rBIb_DqtgcJCyL9SVX7JC-A271VXrH9fw1VopUUYetgG8C12_X6iLeBRO1KcCDp9gpM6uUnsX8u-fdOENGgyX_2NfVbPJJ0VvhvsbIY-6ERS4eyWzsyacMOPpcs8lGX7UzVWfBa2qrBD4pCsafzPAQGlNJfzlztA8wx_Nx-dvqKNfs3Jpu4uceT")' }}
                   >
@@ -846,15 +845,15 @@ export const HomePage: React.FC<HomePageProps> = ({
                   Send us your preferred appointment details and our clinic team will contact you to confirm availability. Experience honest, compassionate dental care right here in Neelasandra.
                 </p>
                 <div className="flex flex-wrap items-center gap-3 pt-2">
-                  <button 
+                  <button
                     onClick={() => onOpenBooking()}
                     className="inline-flex items-center justify-center px-6 h-12 rounded-xl bg-[#780b00] text-white font-semibold text-sm shadow-sm hover:opacity-95 active:scale-[0.98] transition-all cursor-pointer"
                   >
                     Book an Appointment
                   </button>
-                  <a 
-                    className="inline-flex items-center gap-2 px-5 h-12 rounded-xl bg-white text-[#002548] font-semibold text-sm hover:bg-[#eef4ff] transition-colors" 
-                    href="https://wa.me/916360654061" 
+                  <a
+                    className="inline-flex items-center gap-2 px-5 h-12 rounded-xl bg-white text-[#002548] font-semibold text-sm hover:bg-[#eef4ff] transition-colors"
+                    href="https://wa.me/916360654061"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
