@@ -1,0 +1,6 @@
+{
+  "name": "Narayana Dental Clinic",
+  "description": "Advanced Family Dentistry in Austin Town & Neelasandra, Bengaluru. Quality dentistry, painless root canals, orthodontics, implants, and gentle care since 2011.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
